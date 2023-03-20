@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background: #555;
+}
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    border: 3px solid #fff;
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.4);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    z-index: 1;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    background: #ebfffc;
+    color: #555;
+    height: 60px;
+    flex: 1;
+    margin-right: 16px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 18px;
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img{
+    width: 16px;
+}
+
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: center;
+    color: red;
+    margin-left: 10px;
+    font-size: 17px;
+    margin-top: 10px;
+    display: none;
+}
+
+.myVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .myVideo{
+        height: auto;
+        width: 100%;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .myVideo{
+        height: 100%;
+        width: auto;
+    }
+}
